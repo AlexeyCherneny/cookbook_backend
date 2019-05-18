@@ -3,12 +3,6 @@
   "rules": {
     "curly": ["error", "all"],
     "no-debugger": "error",
-    "no-console": [
-      "error",
-      {
-        "allow": ["warn", "error"]
-      }
-    ],
     "no-empty": ["error", { "allowEmptyCatch": true }],
     "no-duplicate-imports": "error",
     "no-redeclare": "error",

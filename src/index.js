@@ -1,5 +1,3 @@
-/* eslint-disable no-console */
-
 import express from 'express';
 import dbConfig from './config/db';
 import middleWaresConfig from './config/middlewares';
