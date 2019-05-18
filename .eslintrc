@@ -1,0 +1,27 @@
+{
+  "extends": "react-app",
+  "rules": {
+    "curly": ["error", "all"],
+    "no-debugger": "error",
+    "no-console": [
+      "error",
+      {
+        "allow": ["warn", "error"]
+      }
+    ],
+    "no-empty": ["error", { "allowEmptyCatch": true }],
+    "no-duplicate-imports": "error",
+    "no-redeclare": "error",
+    "no-unused-expressions": [
+      "error",
+      {
+        "allowShortCircuit": false,
+        "allowTernary": false,
+        "allowTaggedTemplates": true
+      }
+    ],
+    "radix": "error",
+    "react/jsx-no-target-blank": ["error"],
+    "react/prop-types": ["error"]
+  }
+}

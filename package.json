@@ -1,0 +1,33 @@
+{
+  "name": "backend",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "AlexeyCherneny",
+  "license": "MIT",
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon dist/index.js",
+    "build:watch": "babel -w --out-dir=dist ./src",
+    "clean": "rimraf dist",
+    "lint": "eslint src",
+    "lint:fix": "eslint --fix src"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.2.1",
+    "mongoose": "4.7.7",
+    "morgan": "^1.9.0",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0"
+  },
+  "devDependencies": {
+    "eslint-config-equimper": "^2.2.2",
+    "nodemon": "^1.17.3",
+    "rimraf": "^2.6.2"
+  }
+}
