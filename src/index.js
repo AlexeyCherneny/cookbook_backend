@@ -1,11 +1,12 @@
 import express from 'express';
-import dbConfig from './config/db';
-import middleWaresConfig from './config/middlewares';
+import configDB from './config/db';
+import configMiddleWares from './config/middleWares';
 import { RecipeRoutes, CategoriesRoutes, UserRoutes } from './modules';
 
 const app = express();
-dbConfig();
-middleWaresConfig(app);
+
+configDB();
+configMiddleWares(app);
 
 app.use('/api', [RecipeRoutes, CategoriesRoutes, UserRoutes]);
 

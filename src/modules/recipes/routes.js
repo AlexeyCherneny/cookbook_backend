@@ -1,6 +1,5 @@
 import { Router } from 'express';
 import * as RecipesController from './controller';
-// import { requireJwtAuth } from '../../utils/requireJwtAuth';
 
 const routes = new Router();
 
